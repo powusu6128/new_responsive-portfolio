@@ -22,10 +22,11 @@ var course_work = [{
         "skills": "MySQL, JavaScript, Nodejs"
     },
     {
-        "imgsrc": "img/logs.jpg",
+        "imgsrc": " ",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/liri-node-app",
-        "description": "liri works like  siri/google but in this case contrained to text where one can get responses from twitter, guffys and spofigy",
+        "description": "liri works like  siri/google but in this case contrained to text"+
+                        "where one can get responses from twitter, guffys and spofigy",
         "skills": "HTML, CSS, Bootstrap, JavaScript, Nodejs"
     },
     {
@@ -39,7 +40,8 @@ var course_work = [{
         "imgsrc": "public/img/giphy.png",
         "previewurl": "",
         "githuburl": "https://github.com/powusu6128/Giphy_App",
-        "description": 'Simple web app that displays ten giphys randomly based on any matching search term',
+        "description": 'Simple web app that displays ten giphys randomly based '+
+                        'on any matching search term',
         "skills": "jquery, javascript, HTML, CSS,boostrap"
     },
     {
@@ -83,6 +85,7 @@ var projects = [{
 
 
 for (var i = 0; i < course_work.length; i++) {
+    console.log(course_work[i]['description']);
     $("#courseworkcards").append(
         '<div class="col-lg-6">' +
         '<div class="card mb-6 box-shadow">' +

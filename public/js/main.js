@@ -22,7 +22,7 @@ var course_work = [{
         "skills": "MySQL, JavaScript, Nodejs"
     },
     {
-        "imgsrc": "img/logs.jpg",
+        "imgsrc": "#",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/liri-node-app",
         "description": "liri works like  siri/google but in this case contrained to text where one can get responses from twitter, guffys and spofigy",

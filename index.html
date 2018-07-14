@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>responsive-profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+    <link href="dist/css/bootstrap-colorpicker.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="public/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <div id="logo">
+                    <img src="public/img/phil_logo.png" alt="pc icon" width="45" height="45">
+                </div>
+                <strong>Owusu Philip</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-light">
+                            <br> Here are some project works that i've been working on
+                            <a href="#project-works">
+                                <strong>Click Here</strong>
+                            </a>
+                            and some course works
+                            <a href="#course-works">
+                                <strong>Click Here</strong>
+                            </a>
+
+
+
+                        </p>
+
+                        <p class="text-light">
+                            For further information you can reach me by sending me a message
+                            <a href="#contact">
+                                <strong>Click Here</strong>
+                            </a>
+                        </p>
+                       
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.linkedin.com/in/powusu6128" class="text-white" target="_blank">
+                                    <img src="img/linkedin.png" alt="linked in logo" width="85" height="19">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/powusu6128" class="text-white" target="_blank">
+                                    <img src="img/github.png" alt="github logo" width="60" height="25">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="text-white">
+                                    <strong>Email me</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-dark"></div>
+                    <div class="col-md-6">
+                        <h1 class="jumbotron-heading">Hi there, I'm Philip</h1>
+                        <p class="lead text-dark">
+                            <strong>Learing Full stack development at UoM.</strong>
+                            <br>I like associating with people with positive mindsets.
+                        </p>
+                        <p>
+                            <a href="#course-works" class="btn btn-primary my-2">Course Work</a>
+                            <a href="#project-works" class="btn btn-primary my-2">projects Work</a>
+                            <a href="#contact" class="btn btn-secondary my-2">Contact Me</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="album pt-8 bg-dark text-white" id="course-works">
+            <div class="container">
+                <div class="row mt-10" id="courseworkcards" > 
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="album py-5 bg-light" id="project-works">
+            <div class="container">
+                <div class="row" id="projectworkcards">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-secondary text-light py-5">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6" id="contact">
+                        <form id="ajax-contact" action="php/mail.php" method="post">
+                            <h3 id="form-heading">Say Hello</h3>
+                            <div id="name-group" class="form-group">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" placeholder="Your Name" name="name" id="name">
+                            </div>
+                            <div id="email-group" class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+                            </div>
+                            <div id="message-group" class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" placeholder="Your message" name="message" rows="5"></textarea>
+                            </div>
+                            <div id="form-messages"></div>
+                            <div class="col-xs-12 button-holder">
+                                <div class="ajax-button">
+                                    <div class="fa fa-check done"></div>
+                                    <div class="fa fa-times failed"></div>
+                                    <input id="submit" class="submit" type="button" value="Submit" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4" id="connect">
+                        <div class="align-items-center justify-content-md-center">
+                            <ul class="list-unstyled list-connect">
+                                <li>Connect with me on
+                                    <br>
+                                    <a href="https://www.linkedin.com/" class="text-white" target="_blank">
+                                        <img src="img/linkedin.png" alt="linked in logo" width="85" height="19">
+                                    </a>
+                                </li>
+                                <li>View my repositories on
+                                    <br>
+                                    <a href="https://github.com/powusu6128" class="text-white" target="_blank">
+                                        <img src="img/github.png" alt="github logo" width="60" height="25">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 text-center">
+                    <p>Copyright &copy; 2018 Philip Owusu</p>
+                    <p class="fa-bottom">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <a href="#">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="public/js/main.js"></script>
+</body>
+
+</html>

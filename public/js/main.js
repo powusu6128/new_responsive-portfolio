@@ -87,8 +87,8 @@ var projects = [{
 for (var i = 0; i < course_work.length; i++) {
     console.log(course_work[i]['description']);
     $("#courseworkcards").append(
-        '<div class="col-lg-6">' +
-        '<div class="card mb-6 box-shadow">' +
+        '<div class="col-lg-4">' +
+        '<div class="card mb-4 box-shadow">' +
         `<a href="${course_work[i]["previewurl"]}" target="_blank">` +
         `<img class="card-img-top img-fluid img-thumbnail" src="${course_work[i]["imgsrc"]}" alt="Project image"></a>` +
         '<div class="card-body">' +

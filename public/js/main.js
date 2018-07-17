@@ -3,30 +3,34 @@ var course_work = [{
         "imgsrc": "public/img/burger.png",
         "previewurl": "https://guarded-wave-64385.herokuapp.com/burger",
         "githuburl": "https://github.com/powusu6128/burger",
-        "description": "App for reqesting for a burger which uses database setup with heroku",
-        "skills": "Javascipt,JQuery, Nodejs, MySQL<br> HTML, CSS, Bootstrap"
+        "description": "App for reqesting for a burger or service which uses database setup with heroku" +
+                        "When the burger or service is consumed the status changes to devoured in the "+
+                        "dababase",
+        "skills": "Nodejs, MySQL, JawsDB    and heroku deployed.<br> HTML, CSS, Bootstrap"
     },
     {
         "imgsrc": "public/img/friendfinder.png",
         "previewurl": "https://murmuring-anchorage-69677.herokuapp.com/",
         "githuburl": "https://github.com/powusu6128/FriendFinder",
-        "description": "App for finding friends who have similar interest",
+        "description": "App for finding friends who have similar interest " +
+                        "this app ask user survey questions and after will " +
+                        " link you to a friend",
         "skills": "HTML,Nodejs, CSS, Bootstrap, Javascript, JQuerry"
     },
     {
         "imgsrc": "public/img/bamazon.png",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/bamazon",
-        "description": "Bamazon like amazon app whic uses MySQL to keep track of inventory management"+ 
-                        "where one can stock producets check sales and monitor profit made on sales",
+        "description": "Bamazon like amazon app whic uses MySQL to keep track of inventory management " +
+            "where one can stock producets check sales and monitor profit made on sales",
         "skills": "MySQL, JavaScript, Nodejs"
     },
     {
-        "imgsrc": " ",
+        "imgsrc": "public/img/288x280.png ",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/liri-node-app",
-        "description": "liri works like  siri/google but in this case contrained to text"+
-                        "where one can get responses from twitter, guffys and spofigy",
+        "description": "liri works like  siri/google but in this case contrained to text " +
+            "where one can get responses from twitter, guffys and spofigy",
         "skills": "HTML, CSS, Bootstrap, JavaScript, Nodejs"
     },
     {
@@ -40,25 +44,25 @@ var course_work = [{
         "imgsrc": "public/img/giphy.png",
         "previewurl": "",
         "githuburl": "https://github.com/powusu6128/Giphy_App",
-        "description": 'Simple web app that displays ten giphys randomly based '+
-                        'on any matching search term',
+        "description": 'Simple web app that displays ten giphys randomly based ' +
+                'on any matching search term',
         "skills": "jquery, javascript, HTML, CSS,boostrap"
     },
     {
         "imgsrc": "public/img/trivia_game.png",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/TriviaGame",
-        "description": 'Web app guessing game that ask player questions and time the player as well' +
-            'if you player answer is corrrect picture will be display hence notify ' +
-            'if wrong answer',
+        "description": 'Web app guessing game that ask player questions and time the player as well ' +
+                'if you player answer is corrrect picture will be display hence notify ' +
+                'if wrong answer',
         "skills": "javascript, HTML, CSS,boostrap"
     },
     {
         "imgsrc": "public/img/crystal.png",
         "previewurl": "#",
         "githuburl": "https://github.com/powusu6128/week-4-game-1",
-        "description": 'Web app game that display four crystals and a hidden values that the player have to guess',
-        "skills": "javascript, HTML, CSS,boostrap"
+        "description": 'Web app game that display four crystals and a hidden values that the player have to guess ',
+        "skills": "jquery, HTML, CSS,boostrap"
     },
 
 ];
@@ -69,16 +73,16 @@ var projects = [{
         "githuburl": "https://github.com/aarontkennedy/Travel-Route-Itinerary",
         "description": "This group project.It's purpose is for road trip users can plan a trip ane insert waypoints" +
             "profile and rate some other users news and commit on it",
-        "skills": "Javascipt,JQuery, Nodejs, MySQL,heroku deployed<br> HTML, CSS, Bootstrap"
+        "skills": " Nodejs, firebase,heroku deployed<br> HTML, CSS, Bootstrap"
     },
 
     {
         "imgsrc": "public/img/cbcwork.png",
         "previewurl": "https://cbcwork.herokuapp.com/",
         "githuburl": "https://github.com/tarose412/CBCwork",
-        "description": "This is a group project. The app is link a newsfeed that people can login, create account using gravatar" +
+        "description": "This is a group project. The app is link a newsfeed that people can login, create account using gravatar " +
             "profile and rate some other users news and commit on it",
-        "skills": "Javascipt,JQuery, Nodejs, MySQL,heroku deployed<br> HTML, CSS, Bootstrap"
+        "skills": "Nodejs, MySQL,heroku deployed<br> HTML, CSS, Bootstrap"
     }
 ];
 

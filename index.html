@@ -92,8 +92,8 @@
 
     <main>
 
-        <section class="jumbotron text-center">
-            <div class="container">
+        <div class="jumbotron text-center">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 bg-dark">
                         <img src="public/img/phil.jpg " height='320px' width='300px' alt="phil">
@@ -101,8 +101,10 @@
                     <div class="col-md-6">
                         <h1 class="jumbotron-heading">Hi there, I'm Philip</h1>
                         <p class="lead text-dark">
-                            <strong>Learing Full stack development at UoM.</strong>
+                            <strong>I'm learing Full stack development at UoM.</strong>
                             <br>I like associating with people with positive mindsets.
+                            <br>Above all, I like to strive for success and everyday 
+                            <br>is an opportunity to learn new things.
                         </p>
                         <p>
                             <a href="#course-works" class="btn btn-primary my-2">Course Work</a>
@@ -113,9 +115,9 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
-        <div class="album pt-8 bg-dark text-white" id="course-works">
+        <div class="album py-3 bg-dark text-white" id="course-works">
             <div class="container">
                 <div class="row mt-10" id="courseworkcards">
 
@@ -124,7 +126,7 @@
 
         </div>
 
-        <div class="album py-5 bg-light" id="project-works">
+        <div class="album py-3 bg-light" id="project-works">
             <div class="container">
                 <div class="row" id="projectworkcards">
 
@@ -133,23 +135,23 @@
 
         </div>
 
-        <div class="bg-secondary text-light py-5">
+        <div class="bg-secondary text-light py-3">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <div class="col-lg-6" id="contact">
-                        <form id="ajax-contact" action="php/mail.php" method="post">
+                    <div class="col-lg-8" id="contact">
+                        <form id="ajax-contact" action="http://postmail.invotes.com/send" method="post">
                             <h3 id="form-heading">Say Hello</h3>
                             <div id="name-group" class="form-group">
                                 <label for="name">Name</label>
-                                <input class="form-control" type="text" placeholder="Your Name" name="name" id="name">
+                                <input class="form-control" type="text" placeholder="Your Name" name="name" id="name" required>
                             </div>
                             <div id="email-group" class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
                             </div>
                             <div id="message-group" class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" id="message" placeholder="Your message" name="message" rows="5"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Your message" name="message" rows="5" required></textarea>
                             </div>
                             <div id="form-messages"></div>
                             <div class="col-xs-12 button-holder">
@@ -225,6 +227,7 @@
         crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="public/js/main.js"></script>
+    <script src="public/js/email.js"></script>
 </body>
 
 </html>
